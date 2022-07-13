@@ -10,10 +10,33 @@
   </head>
   <body>
     <h1>Firefox favicon .ico retina size bug</h1>
+
     <p>
-      Look at the favicon for this page on a retina screen compared with a
-      non-retina screen...
+      Firefox chooses the favicon dynamically from an .ico file based on display
+      density, but it doesn't always seem to choose the most appropriate size.
     </p>
+
+    <h2>Steps to reproduce the issue</h2>
+    <ul>
+      <li>
+        Move the Firefox window between a retina screen and a non-retina screen.
+      </li>
+
+      <li>
+        Observe that on the retina screen, Firefox chooses the 96px favicon
+        instead of the 32px, resulting in a difficult to read icon.
+      </li>
+    </ul>
+
+    <h2>Expectation</h2>
+    <p>
+      I expect that the favicon will choose either the 16px or 32px version
+      depending on whether the screen is retina or not. It doesn't seem correct
+      to downscale a drastically larger icon since favicons have very limited
+      real estate, and the smaller designs will typically look better scaled up.
+    </p>
+
+    <h2>Image reference table</h2>
     <table>
       <thead>
         <tr>
