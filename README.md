@@ -7,3 +7,7 @@ Example code showing a Firefox favicon bug for .ico files with multiple embedded
 - `npx serve src`
 
 - Open <http://localhost:3000> in Firefox
+
+## Bugzilla
+
+This relates to [this Bugzilla bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1494016).
