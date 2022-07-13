@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fafafa;
+  color: #222;
+}
+
+a {
+  color: #00f;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+table td {
+  border-top: 2px solid #ccc;
+}
+
+table th:first-of-type {
+  width: 100px;
+}
+
+table td,
+table th {
+  padding: 1rem 0;
+}
+
+table td:not(:last-of-type),
+table th:not(:last-of-type) {
+  padding-right: 2rem;
+}
+
+table td img {
+  vertical-align: middle;
+}
+
+table img {
+  image-rendering: pixelated;
+}
+
+ul {
+  margin: 1rem 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li:not(:first-of-type) {
+  border-top: 2px solid #ccc;
+}
+
+ul li {
+  padding: 0.5rem 0;
+}

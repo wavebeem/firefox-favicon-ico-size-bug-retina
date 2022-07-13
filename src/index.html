@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>.ico retina bug</title>
+  </head>
+  <body>
+    <h1>Firefox favicon .ico retina size bug</h1>
+    <p>
+      Look at the favicon for this page on a retina screen compared with a
+      non-retina screen...
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span>16 &times 16</span></td>
+          <td>
+            <img
+              src="/favicon-16.png"
+              width="16"
+              height="16"
+              alt="16px favicon"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><span>32 &times 32</span></td>
+          <td>
+            <img
+              src="/favicon-32.png"
+              width="32"
+              height="32"
+              alt="32px favicon"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><span>96 &times 96</span></td>
+          <td>
+            <img
+              src="/favicon-96.png"
+              width="96"
+              height="96"
+              alt="96px favicon"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Computer information</h2>
+    <ul>
+      <li>MacBook Pro (16-inch, 2019)</li>
+      <li>3072 &times; 1920</li>
+      <li>
+        This bug happens at all possible resolutions for this built-in laptop
+        display.
+      </li>
+    </ul>
+    <h2>External monitor</h2>
+    <ul>
+      <li>27-inch</li>
+      <li>2560 &times; 1440</li>
+      <li>60 Hz</li>
+      <li>HDMI</li>
+    </ul>
+    <h2>Source code</h2>
+    <p>
+      Source code is available on
+      <a href="https://github.com/wavebeem/firefox-favicon-ico-size-bug-retina"
+        >GitHub</a
+      >.
+    </p>
+  </body>
+</html>
